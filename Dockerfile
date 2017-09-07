@@ -18,9 +18,9 @@ RUN apk add --no-cache --update curl tar tzdata \
     && chown -R daemon:daemon  "${JIRA_INSTALL}"
 
 
-ADD server.xml ${JIRA_INSTALL}/conf/server.xml
+#ADD server.xml ${JIRA_INSTALL}/conf/server.xml
 ADD setenv.sh ${JIRA_INSTALL}/bin/setenv.sh
-RUN chown daemon:daemon ${JIRA_INSTALL}/conf/server.xml
+#RUN chown daemon:daemon ${JIRA_INSTALL}/conf/server.xml
 RUN chown daemon:daemon ${JIRA_INSTALL}/bin/setenv.sh
 
 # Use the default unprivileged account. This could be considered bad practice
