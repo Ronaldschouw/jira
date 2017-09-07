@@ -1,0 +1,3 @@
+simpleDockerBuild {
+   imageId = 'portbase/jira'
+}
