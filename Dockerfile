@@ -1,6 +1,7 @@
 FROM anapsix/alpine-java:jdk
 
 #  Setup useful environment variables
+#
 ENV JIRA_HOME     /var/atlassian/jira
 ENV JIRA_INSTALL  /opt/atlassian/jira
 ENV JIRA_VERSION  7.5.0
